@@ -5,6 +5,34 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
+  <!-- Servlets Definition -->
+  <servlet>
+  	<servlet-name>Create Note Controller</servlet-name>
+  	<servlet-class>rd.lab.jdbceh.demo.controller.CreateNoteController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Update Note Controller</servlet-name>
+  	<servlet-class>rd.lab.jdbceh.demo.controller.UpdateNoteController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Delete Note Controller</servlet-name>
+  	<servlet-class>rd.lab.jdbceh.demo.controller.DeleteNoteController</servlet-class>
+  </servlet>
+  
+  <!-- Servlets Mapping definition -->
+  <servlet-mapping>
+  	<servlet-name>Create Note Controller</servlet-name>
+  	<url-pattern>/create</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Update Note Controller</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Delete Note Controller</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
   <!-- Resource Definition -->
   <!-- Data source -->
   <resource-ref>
